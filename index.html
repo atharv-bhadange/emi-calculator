@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EMI Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>EMI Calculator</h1>
+		<form>
+			<label>Loan Amount:</label>
+			<input type="number" id="loanAmount" required>
+			<label>Interest Rate:</label>
+			<input type="number" id="interestRate" step="0.01" required>
+			<label>Loan Term (in months):</label>
+			<input type="number" id="loanTerm" required>
+			<button type="button" onclick="calculateEMI()">Calculate EMI</button>
+			<div id="result"></div>
+		</form>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
